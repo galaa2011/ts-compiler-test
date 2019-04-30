@@ -1,0 +1,26 @@
+[
+  {
+    "name": "IProps",
+    "documentation": "",
+    "type": "typeof IProps",
+    "constructors": [
+      {
+        "parameters": [],
+        "returnType": "IProps",
+        "documentation": ""
+      }
+    ]
+  },
+  {
+    "name": "default",
+    "documentation": "",
+    "type": "typeof FooClass",
+    "constructors": [
+      {
+        "parameters": [],
+        "returnType": "FooClass",
+        "documentation": ""
+      }
+    ]
+  }
+]

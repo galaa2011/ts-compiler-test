@@ -1,0 +1,22 @@
+{
+  "name": "ts-compiler-test",
+  "version": "1.0.0",
+  "description": "ts编译",
+  "main": "index.ts",
+  "author": "galaa2011",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.7",
+    "@types/react": "^16.8.14",
+    "nodemon": "^1.18.11",
+    "react": "^16.8.6",
+    "ts-node": "^8.1.0"
+  },
+  "scripts": {
+    "dev": "nodemon --exec node --inspect --require ts-node/register",
+    "test": "ts-node"
+  }
+}

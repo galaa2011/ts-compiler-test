@@ -1,0 +1,39 @@
+{
+  "props": {
+    "name": {
+      "name": "name",
+      "returnType": "number",
+      "description": {
+        "name": "Foo2",
+        "components": {
+          "a": {
+            "name": "a",
+            "type": "input",
+            "design": {
+              "label": "输入框"
+            }
+          },
+          "b": {
+            "name": "b",
+            "type": "button",
+            "design": {
+              "label": "按钮",
+              "text": "b"
+            }
+          }
+        }
+      }
+    },
+    "labela": {
+      "name": "labela",
+      "returnType": "string",
+      "description": {
+        "label": "文本内容",
+        "inputType": 2,
+        "description": "文本组件的展示内容"
+      }
+    }
+  },
+  "name": "Foo",
+  "version": "1.0.0"
+}
