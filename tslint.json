@@ -13,7 +13,8 @@
     "max-classes-per-file": false,
     "no-var-requires": false,
     "arrow-parens": false,
-    "no-eval": false
+    "no-eval": false,
+    "no-shadowed-variable": false
   },
   "rulesDirectory": []
 }

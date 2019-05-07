@@ -97,42 +97,6 @@ function generateDescription(fileNames: string[], options: ts.CompilerOptions): 
   }
 }
 
-/**
- * 处理sourceFile内容
- *
- * @param {ts.Node} node
- */
-/* function visit(node: ts.Node) {
-  if (!isNodeExported(node)) {
-    console.log("isNodeExported: ------\n", node.getText());
-    return;
-  }
-  if (ts.isImportDeclaration(node)) {
-    console.log("import: ------\n", node.getText());
-    if (node.importClause && node.importClause.namedBindings) {
-      const namedBindings = node.importClause.namedBindings as ts.NamedImports;
-      namedBindings.elements && namedBindings.elements.forEach(el => {
-        if (el.propertyName) {
-          console.log(el.propertyName.text);
-        }
-      });
-    }
-  }
-  if (ts.isClassDeclaration(node) && node.name) {
-    debugger;
-    console.log("class: ------\n", node.getText());
-    node.decorators && node.decorators.map(d => {
-      const decoratorName = getDecoratorName(d);
-      // console.log(decoratorName);
-      if (CLASS_DECORATORS.indexOf(decoratorName) !== -1) {
-        const expression = d.expression as ts.CallExpression;
-        console.log(expression.arguments[0].getText());
-        output = { ...JSON.parse(expression.arguments[0].getText()) };
-      }
-    });
-  }
-} */
-
 function isNodeExported(node: ts.Node): boolean {
   return (
     (ts.getCombinedModifierFlags(node as ts.Declaration) & ts.ModifierFlags.Export) !== 0 ||
